@@ -1,0 +1,184 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+}
+
+.left-menu {
+    position: absolute;
+    background-color: #151515;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+
+.right-content {
+    position: absolute;
+    background-color: #ffd700;
+    height: 100%;
+    width: 75%;
+    left: 25%;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 45%;
+    border: 3px solid #ccac00;
+}
+
+nav {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+nav ul li {
+    padding-top: 18%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+i {
+    text-align: center;
+    margin-top: 15%;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#content-text {
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: large;
+    padding: 5px 17px;
+    justify-content: left;
+}
+
+#content-text p {
+    margin-top: 5%;
+    padding: 5px 17px;
+}
+
+#content-text h1 {
+    padding: 5px 17px;
+}
+
+#content-text h4 {
+    padding: 5px 17px;
+}
+
+#area {
+    display: none;
+    position: absolute;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size: large;
+    width: 75%;
+}
+
+#formulario {
+    padding: 5px 17px;
+}
+
+form label {
+    font-size: larger;
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+form input {
+    border-radius: 10px;
+    width: 40%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    width: 80%;
+    border-radius: 10px;
+}
+
+form button {
+    border-radius: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+form ::placeholder {
+    padding: 10px;
+}
+
+#commentsLounge {
+        display: none;
+        align-content: center;
+        position: absolute;
+        font-family: 'Noto Sans', sans-serif;
+        margin-top: 45%;
+        margin-left: 20%;
+        font-size: large;
+        width: 75%;
+}
+
+#commentsLounge textarea {
+    width: 80%;
+    border-radius: 10px;
+}
+
+#commentsLounge h1 {
+    margin-left: 28%;
+    padding: 10px;
+}
+
+#commentsLounge h4 {
+    margin-left: 25%;
+    padding: 10px;
+}
+
+#commentsLounge button {
+    border-radius: 10px;
+    width: 80px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+#commentsLounge ::placeholder {
+    padding: 10px;
+}
+
+#commentsLounge input {
+    border-radius: 10px;
+    width: 40%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 18%;
+}
+
+#lista{
+    border-radius: 10px;
+    height: 30px;
+    padding: 15px;
+    margin-bottom: 5px;
+    margin-top: 15;
+    margin-left: 45%;
+}
+
+#lista li{
+    padding: 5px;
+    font-family: 'Noto Sans', sans-serif;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,500&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"/>
+    <link rel="icon" href="iconFav.png" type="image"/>
+    <title>Artur Santana</title>
+  </head>
+  <body>
+    <div class="left-menu">
+      <img src="./images/avatar.jpg" alt="Profile picture" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#" onclick="onShowContent(event, 'about')">Sobre</a>
+          </li>
+          <li>
+            <a href="#" onclick="onShowContent(event, 'knowledge')">Conhecimentos</a>
+          </li>
+          <li>
+            <a href="#" onclick="onShowContent(event, 'objective')">Objetivos</a>
+          </li>
+          <li>
+            <a href="#" onclick="onShowContent(event, 'contact')">Contato</a>
+          </li>
+          <li>
+            <a href="#" onclick="onShowContent(event, 'lounge')">Lounge</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="https://www.facebook.com/ass.awol/" target="blank"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/luvsng1" target="blank"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a href="https://github.com/luvsng" target="blank"
+        ><i class="fab fa-github"></i
+      ></a>
+    </div>
+    <div class="right-content">
+      <div id="content-text"></div>
+
+      <ul id="lista"><li></li></ul>
+
+      <div id="commentsLounge">
+        <div>
+          <h1>Interaja aqui</h1>
+          <h4>Seus comentários são anônimos</h3>
+          <div class="form-group">
+              <textarea type="text" id="commentContent" placeholder="Digite seu comentário aqui" rows="5" required></textarea>
+          </div>
+          <button type="submit" onclick="addComments()">Comentar</button>
+        </div>
+      </div>
+      <div id="area">
+        <form id="formulario" autocomplete="off"target="_blank">
+          <fieldset>
+            <h1>Fale comigo</h1>
+            <label>Nome:</label>
+            <input type="text" id="emailName" name="name" placeholder="Digite seu nome completo" required>
+            <label>Email:</label><input id="emailAdress" type="email" name="email" placeholder="Seu Email" required>
+            <label>Mensagem:</label><textarea id="emailContent" placeholder="Digite sua mensagem" name="message" rows="10" required></textarea>
+            <button onclick="contatoEmail()">Enviar email</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="./javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
